@@ -37,6 +37,13 @@ describe('Immutable', () => {
         expect(data.get('posts[0].comments').length).to.equal(3);
         expect(newData.get('posts[0].comments').length).to.equal(3);
         expect(newData.get('posts[0].comments[1].author')).to.equal('Janice');
+        // make sure that we are not getting a full clone
+        const newDataFirstComment = newData.get('posts[0].comments[0]').toJS();
+        const dataFirstComment = data.get('posts[0].comments[0]').toJS();
+        const body = 'body';
+        dataFirstComment.body = body;
+        expect(newDataFirstComment.body).to.equal(body);
+        expect(dataFirstComment.body).to.equal(body);
       });
     });
 
