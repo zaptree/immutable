@@ -1,0 +1,30 @@
+{
+  "name": "un",
+  "version": "1.0.0",
+  "description": "immutable objects augmented with lodash",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaptree/immutable.git"
+  },
+  "keywords": [
+    "immutable",
+    "lodash"
+  ],
+  "author": "jumaru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaptree/immutable/issues"
+  },
+  "homepage": "https://github.com/zaptree/immutable#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
